@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <div class="left-nav">
+    <ul>
+      <li><%= link_to "Welcome", welcome_path %></li>
+    </ul>
+  </div>
+  <div class="right-nav">
+    <ul>
+      <li><%= link_to "Portfolio", portfolio_path %></li>
+    </ul>
+  </div>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+
+<footer>
+  <a href="https://twitter.com/jlgoedert?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @jlgoedert</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/jlgoedert" aria-label="Follow @jlgoedert on GitHub">Follow @jlgoedert</a>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</footer>
+
+</html>
