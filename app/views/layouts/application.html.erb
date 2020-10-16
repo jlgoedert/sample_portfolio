@@ -8,16 +8,12 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
-  <div class="left-nav">
-    <ul>
-      <li><%= link_to "Welcome", welcome_path %></li>
-    </ul>
-  </div>
-  <div class="right-nav">
-    <ul>
-      <li><%= link_to "Portfolio", portfolio_path %></li>
-    </ul>
-  </div>
+  <ul class="head-nav">
+    <li class="head-li"><%= link_to "Welcome", welcome_path %></li>
+    <li class="head-li"><%= link_to "Portfolio", portfolio_path %></li>
+    <li class="head-li"><%= link_to "About", about_path %></li>
+    <li class="head-li"><%= link_to "Contact", contact_path %></li>
+  </ul>
 </head>
 <body>
 
